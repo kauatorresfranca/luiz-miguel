@@ -16,6 +16,7 @@ export const HeroContent = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding-top: 120px;
     gap: 10px;
     height: 100%;
 `;
@@ -45,6 +46,7 @@ export const HeroButton = styled.a`
     color: ${colors.title};
     border-radius: 4px;
     text-decoration: none;
+    font-weight: 600;
 
     &:hover {
         background: darken(#C8A04F, 10%);

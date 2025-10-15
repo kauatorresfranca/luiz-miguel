@@ -22,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         list-style: none;
         text-decoration: none;
-        font-family: roboto, sans-serif;
+        font-family: 'montserrat', sans-serif;
 
         .container {
             max-width: 1200px;

@@ -1,5 +1,5 @@
 import * as S from './styles'
-import { AiOutlineCalendar } from 'react-icons/ai'
+import { MdChatBubbleOutline } from 'react-icons/md'
 
 const Hero = () => {
   return (
@@ -13,8 +13,8 @@ const Hero = () => {
           para que cada visita seja uma experiência única.
         </S.HeroSubtitle>
         <S.HeroButton>
-          <AiOutlineCalendar size={22}/>
-          Agendar Consulta
+          <MdChatBubbleOutline size={22}/>
+          Entrar em contato
         </S.HeroButton>
       </S.HeroContent>
     </S.Hero>

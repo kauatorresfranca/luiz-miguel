@@ -29,6 +29,7 @@ export const NavItem = styled.a`
   text-decoration: none;
   color: ${colors.primary};
   border-bottom: 2px solid transparent;
+  font-weight: 600;
 
   &::after {
     content: '';
