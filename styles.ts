@@ -8,10 +8,11 @@ export const breakpoints = {
 }
 
 export const colors = {
-    primary: '#3498db',
-    secondary: '#2ecc71',
+    primary: '#19222c',
+    secondary: '#C8A04F',
     background: '#f5f5f5',
-    text: '#333',
+    title: "#ffffff",
+    text: '#777777ff',
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -21,6 +22,7 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         list-style: none;
         text-decoration: none;
+        font-family: roboto, sans-serif;
 
         .container {
             max-width: 1200px;
