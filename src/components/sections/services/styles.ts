@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { colors } from '../../../../styles'; // Ajuste o path se necessário
 
 export const Services = styled.section`
-  padding: 32px 0 0 80px;
+  padding-top: 32px;
   background-color: ${colors.background};
   min-height: 100vh;
 
