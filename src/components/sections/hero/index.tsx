@@ -12,7 +12,7 @@ const Hero = () => {
           Excelência odontológica aliada a um ambiente acolhedor e moderno,
           para que cada visita seja uma experiência única.
         </S.HeroSubtitle>
-        <S.HeroButton>
+        <S.HeroButton href="https://api.whatsapp.com/send?phone=5582996614416" target="_blank" rel="noopener noreferrer">
           <MdChatBubbleOutline size={22}/>
           Entrar em contato
         </S.HeroButton>
