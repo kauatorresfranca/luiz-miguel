@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 
 const navItems = [
-  { label: 'Início', href: '#home' },
+  { label: 'Início', href: '#' },
   { label: 'Serviços', href: '#services' },
   { label: 'Sobre mim', href: '#about-me' },
   { label: 'Depoimentos', href: '#testimonials' },

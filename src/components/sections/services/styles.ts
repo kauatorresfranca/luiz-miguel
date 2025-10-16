@@ -53,6 +53,7 @@ export const ServiceItem = styled.div`
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(200, 160, 79, 0.2); /* Shadow secondary */
+    cursor: pointer;
   }
 
   svg { /* Estilo pro ícone FaTooth */

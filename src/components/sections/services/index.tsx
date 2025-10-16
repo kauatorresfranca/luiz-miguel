@@ -3,7 +3,7 @@ import { FaTooth } from 'react-icons/fa'; // Placeholder dental icon (troque por
 
 const Services = () => {
   return (
-    <S.Services className="container">
+    <S.Services className="container" id='services'>
       <h3>
         Especialidades
       </h3>

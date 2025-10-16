@@ -5,9 +5,9 @@ export const AboutMe = styled.section`
   display: flex;
   align-items: center;
   gap: 40px;
-  background: linear-gradient(180deg, ${colors.primary} 0%, #0a0f14 100%); /* Dark blue to deeper dark blue/black */
-  padding: 60px 40px;
-  border-radius: 40px 40px 0 0;
+  background: linear-gradient(125deg, ${colors.primary} 0%, #114781ff 100%);
+  padding: 60px 40px 0 40px;
+  border-radius: 40px 40px 20px 20px;
   max-width: 1200px;
   margin: 0 auto;
 
@@ -19,7 +19,7 @@ export const AboutMe = styled.section`
 
 export const AboutMeImage = styled.div`
   width: 300px;
-  min-height: 300px; /* Minimum height to ensure full image */
+  min-height: 300px;
   border-radius: 10px;
   overflow: hidden;
 
@@ -66,7 +66,7 @@ export const AboutMeTitle = styled.h2`
 
 export const AboutMeSubtitle = styled.h3`
   font-size: 18px;
-  color: ${colors.text};
+  color: ${colors.secondary};
   font-weight: 500;
   margin-bottom: 16px;
 

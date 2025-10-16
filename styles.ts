@@ -33,4 +33,13 @@ export const GlobalStyle = createGlobalStyle`
                 }
         }
     }
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 130px; // Adjust based on header height
+    }
+
+    body {
+        background-color: ${colors.background};
+    }
 `
