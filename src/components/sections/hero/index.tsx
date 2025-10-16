@@ -9,7 +9,7 @@ const Hero = () => {
           Seu sorriso merece o <span>melhor cuidado</span>
         </S.HeroTitle>
         <S.HeroSubtitle>
-          Excelência odontológica aliada a um ambiente acolhedor e moderno,<br />
+          Excelência odontológica aliada a um ambiente acolhedor e moderno,
           para que cada visita seja uma experiência única.
         </S.HeroSubtitle>
         <S.HeroButton>

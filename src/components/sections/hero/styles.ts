@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 import heroImage from '../../../assets/images/hero.png';
-import { colors } from '../../../../styles';
+import heroImageMobile from '../../../assets/images/heroMobile.png';
+import { breakpoints, colors } from '../../../../styles';
 
 export const Hero = styled.div`
     width: 100%;
@@ -9,6 +10,11 @@ export const Hero = styled.div`
     background-image: url(${heroImage});
     background-size: cover;
     background-position: center;;
+
+    @media (max-width: ${breakpoints.tablet}) {
+        background-image: url(${heroImageMobile});
+        height: 90vh;
+    }
 `;
 
 export const HeroContent = styled.div`
@@ -19,21 +25,32 @@ export const HeroContent = styled.div`
     padding-top: 120px;
     gap: 10px;
     height: 100%;
+
+    @media (max-width: ${breakpoints.tablet}) {
+        padding-top: 200px;
+        justify-content: flex-start;
+    }
 `;
 
 export const HeroTitle = styled.h1`
     font-size: 40px;
     font-weight: bold;
     color: ${colors.title};
+    max-width: 500px;
 
     span {
         color: ${colors.secondary};
+    }
+
+    @media (max-width: ${breakpoints.tablet}) {
+        font-size: 32px;
     }
 `;
 
 export const HeroSubtitle = styled.h2`
     font-size: 16px;
     color: ${colors.text};
+    max-width: 520px;
 `;
 
 export const HeroButton = styled.a`
