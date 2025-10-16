@@ -8,7 +8,7 @@ export const Hero = styled.div`
     height: 80vh;
     background-image: url(${heroImage});
     background-size: cover;
-    background-position: center;
+    background-position: center;;
 `;
 
 export const HeroContent = styled.div`
@@ -22,7 +22,7 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroTitle = styled.h1`
-    font-size: 32px;
+    font-size: 40px;
     font-weight: bold;
     color: ${colors.title};
 
@@ -42,13 +42,16 @@ export const HeroButton = styled.a`
     gap: 8px;
     padding: 12px 24px;
     margin-top: 16px;
-    background: ${colors.secondary};
+    background: linear-gradient(45deg, ${colors.secondary} 0%, #816122ff 100%);
     color: ${colors.title};
     border-radius: 4px;
     text-decoration: none;
     font-weight: 600;
+    transition: 0.3s ease-out;
 
     &:hover {
         background: darken(#C8A04F, 10%);
+        cursor: pointer;
+        transform: scale(1.05);
     }
 `;

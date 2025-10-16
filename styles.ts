@@ -12,7 +12,7 @@ export const colors = {
     secondary: '#C8A04F',
     background: '#f5f5f5',
     title: "#ffffff",
-    text: '#777777ff',
+    text: '#c9c8c8ff',
 }
 
 export const GlobalStyle = createGlobalStyle`

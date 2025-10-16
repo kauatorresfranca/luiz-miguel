@@ -22,6 +22,7 @@ export const Logo = styled.img`
 
 export const Nav = styled.nav`
   display: flex;
+  margin-top: 6px;
 `;
 
 export const NavItem = styled.a`
@@ -31,17 +32,27 @@ export const NavItem = styled.a`
   border-bottom: 2px solid transparent;
   font-weight: 600;
 
+  &.active {
+    color: ${colors.secondary};
+
+    &::after {
+      width: 100%;
+    }
+  }
+
   &::after {
     content: '';
     display: block;
     width: 0;
-    height: 2px;
-    margin-top: 4px;
+    height: 3px;
+    margin-top: 6px;
     background: ${colors.secondary};
     transition: width 0.3s ease;
     }
 
     &:hover {
+      color: ${colors.secondary};
+
       &::after {
         width: 100%;
       }
