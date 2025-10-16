@@ -51,6 +51,7 @@ export const HeroSubtitle = styled.h2`
     font-size: 16px;
     color: ${colors.text};
     max-width: 520px;
+    font-weight: 500;
 `;
 
 export const HeroButton = styled.a`
