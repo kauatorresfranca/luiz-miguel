@@ -11,7 +11,7 @@ export const AboutMe = styled.section`
   max-width: 1200px;
   margin: 0 auto;
 
-  @media (max-width: ${breakpoints.tablet}) {
+  @media (max-width: ${breakpoints.laptop}) {
     flex-direction: column;
     padding: 40px 20px;
   }
@@ -30,7 +30,7 @@ export const AboutMeImage = styled.div`
     object-position: top; /* Ensure the top of the head is visible */
   }
 
-  @media (max-width: ${breakpoints.tablet}) {
+  @media (max-width: ${breakpoints.laptop}) {
     width: 200px;
     min-height: 200px;
   }
