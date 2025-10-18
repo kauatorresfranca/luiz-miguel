@@ -1,5 +1,10 @@
 import * as S from './styles';
-import { FaTooth } from 'react-icons/fa'; // Placeholder dental icon (troque por img depois)
+
+import service1 from "../../../assets/images/service1.svg"
+import service2 from "../../../assets/images/service2.svg"
+import service3 from "../../../assets/images/service3.svg"
+import service4 from "../../../assets/images/service4.svg"
+import service6 from "../../../assets/images/service6.svg"
 
 const Services = () => {
   return (
@@ -9,44 +14,34 @@ const Services = () => {
       </h3>
       <S.ServicesList>
         <S.ServiceItem>
-          <FaTooth />
+          <img src={service1} alt="" />
           <h4>Restauração Estética</h4>
           <p>Restauração dos dentes para um sorriso natural e perfeito.</p>
         </S.ServiceItem>
         <S.ServiceItem>
-          <FaTooth />
-          <h4>Prótese Total</h4>
-          <p>Prótese completa para substituição total de dentes ausentes.</p>
+          <img src={service2} alt="" />
+          <h4>Próteses Removíveis</h4>
+          <p>Prótese totais ou parcial para substituição de dentes ausentes.</p>
         </S.ServiceItem>
         <S.ServiceItem>
-          <FaTooth />
+          <img src={service3} alt="" />
           <h4>Limpeza</h4>
           <p>Limpeza profissional para manter a saúde bucal impecável.</p>
         </S.ServiceItem>
         <S.ServiceItem>
-          <FaTooth />
+          <img src={service4} alt="" />
           <h4>Coroa</h4>
           <p>Colocação de coroas para proteção e estética dental.</p>
         </S.ServiceItem>
         <S.ServiceItem>
-          <FaTooth />
-          <h4>Atendimento Infantil</h4>
-          <p>Cuidados odontológicos especializados para crianças.</p>
+          <img src={service1} alt="" />
+          <h4>Restauração</h4>
+          <p>Restauração dos dentes para um sorriso natural e perfeito.</p>
         </S.ServiceItem>
         <S.ServiceItem>
-          <FaTooth />
+          <img src={service6} alt="" />
           <h4>Clareamento</h4>
           <p>Clareamento dental seguro para dentes mais brancos.</p>
-        </S.ServiceItem>
-        <S.ServiceItem>
-          <FaTooth />
-          <h4>Prótese Parcial</h4>
-          <p>Prótese parcial para dentes ausentes selecionados.</p>
-        </S.ServiceItem>
-        <S.ServiceItem>
-          <FaTooth />
-          <h4>Aparelho Ortodôntico</h4>
-          <p>Correção de alinhamento dentário com aparelhos modernos.</p>
         </S.ServiceItem>
       </S.ServicesList>
     </S.Services>

@@ -56,7 +56,7 @@ export const ServiceItem = styled.div`
     cursor: pointer;
   }
 
-  svg { /* Estilo pro ícone FaTooth */
+  img { /* Estilo pro ícone FaTooth */
     width: 50px;
     height: 50px;
     color: ${colors.primary};

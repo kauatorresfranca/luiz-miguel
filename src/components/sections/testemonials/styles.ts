@@ -17,11 +17,11 @@ export const TestimonialsSection = styled.section`
 
 export const TestimonialsTitle = styled.h2`
   font-size: 38px;
-  color: ${colors.title};
+  color: ${colors.primary};
   margin-bottom: 16px;
 
   span {
-    color: ${colors.primary};
+    color: ${colors.secondary};
   }
 
   &::before {

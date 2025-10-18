@@ -4,7 +4,6 @@ import Footer from "./components/sections/footer"
 import Header from "./components/sections/header"
 import Hero from "./components/sections/hero"
 import Services from "./components/sections/services"
-import Testimonials from "./components/sections/testemonials"
 
 const App = () => {
   return (
@@ -13,7 +12,6 @@ const App = () => {
       <Hero />
       <Services />
       <AboutMe />
-      <Testimonials />
       <FAQ />
       <Footer />
     </div>

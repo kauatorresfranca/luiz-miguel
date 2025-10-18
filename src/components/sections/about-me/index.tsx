@@ -11,16 +11,11 @@ const AboutMe = () => {
         <S.AboutMeTitle>Dr. Luiz Miguel Torres</S.AboutMeTitle>
         <S.AboutMeSubtitle>Dentista | CRO/AL 6549</S.AboutMeSubtitle>
         <S.AboutMeDescription>
-          Sou Dr. Luiz Miguel Torres, dentista apaixonado por transformar sorrisos e promover saúde bucal. Formado em 2024 pela UMJ/FAT Alagoas, trago uma abordagem moderna e humanizada, com foco em resultados estéticos e funcionais. Minha especialização em prótese dentária me permite oferecer soluções personalizadas para restauração e reabilitação oral. Atuo em consultório particular, priorizando o conforto e a confiança dos meus pacientes, sempre com base nas mais recentes técnicas odontológicas.
+          Sou o Dr. Luiz Miguel Torres, dentista apaixonado por transformar sorrisos e promover saúde bucal com excelência.
+          Com uma abordagem moderna e humanizada, uno tecnologia e sensibilidade para alcançar resultados estéticos e funcionais que valorizam cada paciente.
+          Especializado em prótese dentária, ofereço soluções personalizadas para reabilitação e restauração oral, sempre priorizando o conforto, a confiança e o bem-estar em cada atendimento.
+          No consultório, cada detalhe é pensado para que sua experiência seja positiva, acolhedora e transformadora.
         </S.AboutMeDescription>
-        <S.AboutMeTraining>
-          <S.AboutMeTrainingTitle>Formação e Experiência</S.AboutMeTrainingTitle>
-          <S.AboutMeTrainingList>
-            <li>Graduação em Odontologia - UMJ/FAT Alagoas (2024)</li>
-            <li>Especialização em Prótese Dentária (em andamento)</li>
-            <li>Atendimento clínico em consultório particular (2024-atual)</li>
-          </S.AboutMeTrainingList>
-        </S.AboutMeTraining>
       </S.AboutMeContent>
     </S.AboutMe>
   );

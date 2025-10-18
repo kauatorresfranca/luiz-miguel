@@ -6,15 +6,14 @@ const Hero = () => {
     <S.Hero>
       <S.HeroContent className='container'>
         <S.HeroTitle>
-          Seu sorriso merece o <span>melhor cuidado</span>
+          Eleve sua autoestima com o <span>sorriso que você sempre sonhou</span>
         </S.HeroTitle>
         <S.HeroSubtitle>
-          Excelência odontológica aliada a um ambiente acolhedor e moderno,
-          para que cada visita seja uma experiência única.
+          Tratamento individualizado e humanizado, com a segurança e excelência que seu sorriso merece.
         </S.HeroSubtitle>
-        <S.HeroButton href="https://api.whatsapp.com/send?phone=5582996614416" target="_blank" rel="noopener noreferrer">
+        <S.HeroButton href="https://api.whatsapp.com/send?phone=5582996614416&text=Olá,%20gostaria%20de%20marcar%20uma%20consulta." target="_blank" rel="noopener noreferrer">
           <MdChatBubbleOutline size={22}/>
-          Entrar em contato
+          Transforme seu sorriso
         </S.HeroButton>
       </S.HeroContent>
     </S.Hero>

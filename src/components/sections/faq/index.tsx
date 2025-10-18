@@ -8,12 +8,12 @@ const FAQ = () => {
     {
       question: 'Como agendar uma consulta com o dentista?',
       answer:
-        'Você pode agendar uma consulta pelo WhatsApp ou telefone. Entre em contato para verificar disponibilidade em Maceió ou Coruripe.',
+        'Você pode agendar uma consulta pelo WhatsApp ou telefone. Entre em contato para verificar disponibilidade em Maceió',
     },
     {
       question: 'Quais são os métodos de pagamento aceitos?',
       answer:
-        'Aceitamos cartões de crédito, débito, PIX e dinheiro. Pagamentos podem ser feitos no dia da consulta ou antecipadamente.',
+        'Aceitamos cartões de crédito, débito, PIX e dinheiro. Pagamentos devem ser feitos no dia da consulta.',
     },
     {
       question: 'O dentista atende convênios ou planos de saúde?',
