@@ -23,7 +23,7 @@ const FAQ = () => {
     {
       question: 'Quanto tempo dura uma consulta odontológica?',
       answer:
-        'Uma consulta dura em média 40 a 60 minutos, dependendo do procedimento, para garantir um atendimento completo e personalizado.',
+        'Uma consulta dura em média 40 a 120 minutos, dependendo do procedimento, para garantir um atendimento completo e personalizado.',
     },
     {
       question: 'Qual é o custo de uma consulta ou procedimento dental?',

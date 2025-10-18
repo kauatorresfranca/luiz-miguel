@@ -5,9 +5,9 @@ import { HiMenu, HiX } from 'react-icons/hi';
 
 const navItems = [
   { label: 'Início', href: '#' },
-  { label: 'Serviços', href: '#services' },
+  { label: 'Especialidades', href: '#services' },
   { label: 'Sobre mim', href: '#about-me' },
-  { label: 'Depoimentos', href: '#testimonials' },
+  //{ label: 'Depoimentos', href: '#testimonials' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Contato', href: '#contact' },
 ];

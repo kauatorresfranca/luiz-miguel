@@ -5,9 +5,8 @@ export const FAQ = styled.div`
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 80px 40px; /* Increased for a premium feel */
+  padding: 40px 0;
   background: ${colors.background}; /* Reverted to original neutral background */
-  min-height: 100vh;
 
   @media (max-width: ${breakpoints.tablet}) {
     padding: 40px 16px;
@@ -41,12 +40,8 @@ export const FAQList = styled.ul`
 
 export const FAQItem = styled.li`
   border-bottom: 1px solid ${colors.text}20;
-  padding: 16px 0;
+  padding: 8px 0;
   transition: box-shadow 0.3s ease;
-
-  &:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  }
 
   &:last-child {
     border-bottom: none;
@@ -57,12 +52,13 @@ export const FAQQuestion = styled.h3`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 16px;
+  padding: 16px 16px;
   font-size: 18px;
   color: ${colors.primary}; /* Changed to primary for visibility */
   font-weight: 500;
   background-color: #f9f9f9;
   border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 
@@ -91,7 +87,9 @@ export const FAQAnswer = styled.p`
   max-height: 0;
   overflow: hidden;
   font-size: 16px;
-  color: ${colors.text};
+  background: ${colors.text};
+  color: ${colors.primary};
+  border-radius: 0 0 10px 10px;
   margin-top: 8px;
   padding: 0 16px;
   transition: max-height 0.5s ease, opacity 0.3s ease, padding 0.3s ease;

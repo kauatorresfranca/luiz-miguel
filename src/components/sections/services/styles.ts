@@ -2,9 +2,8 @@ import styled from 'styled-components';
 import { colors } from '../../../../styles'; // Ajuste o path se necessário
 
 export const Services = styled.section`
-  padding-top: 32px;
+  padding: 48px 0;
   background-color: ${colors.background};
-  min-height: 100vh;
 
   h3 {
     position: relative;
