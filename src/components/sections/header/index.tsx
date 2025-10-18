@@ -9,7 +9,7 @@ const navItems = [
   { label: 'Sobre mim', href: '#about-me' },
   //{ label: 'Depoimentos', href: '#testimonials' },
   { label: 'FAQ', href: '#faq' },
-  { label: 'Contato', href: '#contact' },
+  //{ label: 'Contato', href: '#contact' },
 ];
 
 const Header = () => {

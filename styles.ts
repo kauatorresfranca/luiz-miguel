@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
             max-width: 1200px;
             margin: 0 auto;
 
-            @media (max-width: ${breakpoints.tablet}) {
+            @media (max-width: ${breakpoints.laptop}) {
                 max-width: 90%;
                 }
         }

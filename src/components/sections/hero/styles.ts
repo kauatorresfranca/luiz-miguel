@@ -11,6 +11,11 @@ export const Hero = styled.div`
     background-size: cover;
     background-position: center;;
 
+    @media (max-width: ${breakpoints.laptop}) {
+        background-image: url(${heroImageMobile});
+        height: 80vh;
+    }
+
     @media (max-width: ${breakpoints.tablet}) {
         background-image: url(${heroImageMobile});
         height: 90vh;
@@ -26,7 +31,7 @@ export const HeroContent = styled.div`
     gap: 10px;
     height: 100%;
 
-    @media (max-width: ${breakpoints.tablet}) {
+    @media (max-width: ${breakpoints.laptop}) {
         padding-top: 200px;
         justify-content: flex-start;
     }
