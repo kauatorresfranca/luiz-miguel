@@ -58,7 +58,6 @@ export const FAQQuestion = styled.h3`
   font-weight: 500;
   background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 

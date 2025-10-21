@@ -13,7 +13,7 @@ const AboutMe = () => {
         <S.AboutMeDescription>
           Sou o Dr. Luiz Miguel Torres, dentista apaixonado por transformar sorrisos e promover saúde bucal com excelência.
           Com uma abordagem moderna e humanizada, uno tecnologia e sensibilidade para alcançar resultados estéticos e funcionais que valorizam cada paciente.
-          Especializado em prótese dentária, ofereço soluções personalizadas para reabilitação e restauração oral, sempre priorizando o conforto, a confiança e o bem-estar em cada atendimento.
+          trabalho com prótese dentária, ofereço soluções personalizadas para reabilitação e restauração oral, sempre priorizando o conforto, a confiança e o bem-estar em cada atendimento.
           No consultório, cada detalhe é pensado para que sua experiência seja positiva, acolhedora e transformadora.
         </S.AboutMeDescription>
       </S.AboutMeContent>

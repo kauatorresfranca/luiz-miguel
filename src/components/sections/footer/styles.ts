@@ -54,12 +54,12 @@ export const SocialMediaLink = styled.a`
   justify-content: center;
   width: 48px;
   height: 48px;
-  background-color: ${colors.primary};
+  background-color: ${colors.secondary}40;
   border-radius: 50%;
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: ${colors.primary}99;
+    background-color: ${colors.secondary}99;
     transform: translateY(-4px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
@@ -78,11 +78,10 @@ export const SocialMediaLink = styled.a`
 export const FooterText = styled.p`
   width: 100%;
   font-size: 14px;
-  color: ${colors.text};
+  color: ${colors.primary};
   opacity: 0.7;
   margin: 0;
   padding: 16px 0;
-  border-top: 1px solid ${colors.text};
   font-weight: 300;
 
   @media (max-width: ${breakpoints.tablet}) {
