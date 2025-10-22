@@ -47,7 +47,7 @@ const FAQ = () => {
   };
 
   return (
-    <S.FAQ className='container' id="testimonials">
+    <S.FAQ className='container' id="faq">
       <S.FAQTitle>
         Dúvidas Frequentes
       </S.FAQTitle>
