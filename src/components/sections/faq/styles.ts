@@ -6,26 +6,25 @@ export const FAQ = styled.div`
   flex-direction: column;
   gap: 32px;
   padding: 40px 0;
-  background: ${colors.background}; /* Reverted to original neutral background */
+  background: ${colors.background};
 
   @media (max-width: ${breakpoints.tablet}) {
     padding: 40px 16px;
   }
 `;
 
-export const FAQTitle = styled.h3`
+export const FAQTitle = styled.h2` // Alterado para h2 por hierarquia
   position: relative;
   font-size: 32px;
-  margin-bottom: 3rem;
   color: ${colors.primary};
-  margin: 0 auto 24px auto;
+  margin: 0 auto 40px auto;
   text-align: center;
   font-weight: 700;
 
   &::before {
     display: block;
     content: '';
-    width: 70px;
+    width: 60px;
     height: 4px;
     border-radius: 10px;
     background-color: ${colors.secondary};
@@ -36,67 +35,69 @@ export const FAQTitle = styled.h3`
 export const FAQList = styled.ul`
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Espaço entre os cards */
 `;
 
 export const FAQItem = styled.li`
-  border-bottom: 1px solid ${colors.text}20;
-  padding: 8px 0;
-  transition: box-shadow 0.3s ease;
+  background-color: #ffffff;
+  border-radius: 12px;
+  /* Box shadow para contraste sem usar bordas grossas */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+  transition: all 0.3s ease;
+  overflow: hidden;
 
-  &:last-child {
-    border-bottom: none;
+  &:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
   }
 `;
 
-export const FAQQuestion = styled.h3`
+export const FAQQuestion = styled.button` /* Alterado para button para melhor acessibilidade */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 16px;
+  width: 100%;
+  padding: 20px 24px;
   font-size: 18px;
-  color: ${colors.primary}; /* Changed to primary for visibility */
-  font-weight: 500;
-  background-color: #f9f9f9;
-  border-radius: 8px;
+  color: ${colors.primary};
+  font-weight: 600;
+  background: none;
+  border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: left;
+  transition: background-color 0.3s ease;
 
   i {
-    font-size: 20px;
-    transition: transform 0.3s ease;
-    color: ${colors.primary};
-  }
-
-  &:hover {
-    background-color: #e9e9e9;
-    color: ${colors.primary};
+    font-size: 24px;
+    color: ${colors.text}; /* Cor de destaque no ícone */
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &.active {
-    background-color: ${colors.primary}10;
-    color: ${colors.primary};
-
+    background-color: ${colors.primary}05; /* Fundo levemente azulado/primário */
+    
     i {
       transform: rotate(180deg);
+      color: ${colors.primary};
     }
   }
 `;
 
-export const FAQAnswer = styled.p`
+export const FAQAnswer = styled.div`
   max-height: 0;
   overflow: hidden;
   font-size: 16px;
-  background: ${colors.text};
-  color: ${colors.primary};
-  border-radius: 0 0 10px 10px;
-  margin-top: 8px;
-  padding: 0 16px;
-  transition: max-height 0.5s ease, opacity 0.3s ease, padding 0.3s ease;
+  line-height: 1.6;
+  color: #555; /* Cor de texto mais suave para o conteúdo */
+  transition: max-height 0.4s ease, padding 0.4s ease, opacity 0.3s ease;
   opacity: 0;
+  background-color: #fff;
 
   &.active {
-    max-height: 200px;
+    max-height: 300px; /* Ajuste conforme o tamanho do texto */
     opacity: 1;
-    padding: 12px 16px;
+    padding: 0 24px 20px 24px;
   }
 `;

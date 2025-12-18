@@ -48,20 +48,20 @@ const FAQ = () => {
 
   return (
     <S.FAQ className='container' id="faq">
-      <S.FAQTitle>
-        Dúvidas Frequentes
-      </S.FAQTitle>
+      <S.FAQTitle>Dúvidas Frequentes</S.FAQTitle>
       <S.FAQList>
         {faqs.map((faq, index) => (
           <S.FAQItem key={index}>
             <S.FAQQuestion
               onClick={() => toggleFAQ(index)}
               className={activeIndex === index ? 'active' : ''}
+              aria-expanded={activeIndex === index}
             >
-              {faq.question} <i className="ri-arrow-down-s-line"></i>
+              {faq.question}
+              <i className="ri-arrow-down-s-line"></i>
             </S.FAQQuestion>
             <S.FAQAnswer
-              className={activeIndex === index ? 'active' : 'hidden'}
+              className={activeIndex === index ? 'active' : ''}
             >
               {faq.answer}
             </S.FAQAnswer>
