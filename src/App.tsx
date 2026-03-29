@@ -4,6 +4,7 @@ import Footer from "./components/sections/footer"
 import Header from "./components/sections/header"
 import Hero from "./components/sections/hero"
 import Services from "./components/sections/services"
+import WhatsAppButton from "./components/wpp-button"
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <AboutMe />
       <FAQ />
       <Footer />
+      <WhatsAppButton />
     </div>
   )
 }
