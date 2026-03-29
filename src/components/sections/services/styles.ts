@@ -72,7 +72,7 @@ export const ServiceCard = styled(motion.div)`
   position: relative;
   overflow: hidden;
   border: 1px solid rgba(0,0,0,0.03);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.05);
 
   &:hover {
     transform: translateY(-10px);

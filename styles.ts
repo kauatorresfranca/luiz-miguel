@@ -10,7 +10,7 @@ export const breakpoints = {
 export const colors = {
     primary: '#19222c',
     secondary: '#C8A04F',
-    background: '#f5f5f5',
+    background: '#f5f5f7',
     title: "#ffffff",
     text: 'rgba(190, 189, 189, 1)',
 }
