@@ -6,39 +6,34 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: 'Como agendar uma consulta com o dentista?',
+      question: 'Como agendar uma consulta?',
       answer:
-        'Você pode agendar uma consulta pelo WhatsApp ou telefone. Entre em contato para verificar disponibilidade em Maceió',
+        'Você pode agendar sua consulta diretamente pelo nosso WhatsApp ou telefone. Nossa equipe verificará a melhor disponibilidade para atendê-lo em nosso consultório em Maceió.',
     },
     {
-      question: 'Quais são os métodos de pagamento aceitos?',
+      question: 'Quais são as formas de pagamento?',
       answer:
-        'Aceitamos cartões de crédito, débito, PIX e dinheiro. Pagamentos devem ser feitos no dia da consulta.',
+        'Trabalhamos com diversas modalidades: Cartões de Crédito (com opção de parcelamento), Débito, PIX e dinheiro. O acerto é realizado no dia do atendimento.',
     },
     {
-      question: 'O dentista atende convênios ou planos de saúde?',
+      question: 'O Dr. Luiz atende convênios ou planos de saúde?',
       answer:
-        'Não, nosso consultório não atende convênios ou planos de saúde.',
+        'Atualmente realizamos apenas atendimentos particulares. Isso nos permite dedicar o tempo necessário para cada procedimento, garantindo a excelência e o rigor técnico que sua saúde merece.',
     },
     {
-      question: 'Quanto tempo dura uma consulta odontológica?',
+      question: 'Quanto tempo dura uma consulta?',
       answer:
-        'Uma consulta dura em média 40 a 120 minutos, dependendo do procedimento, para garantir um atendimento completo e personalizado.',
+        'Depende do procedimento. Uma avaliação inicial ou limpeza costuma durar entre 40 a 60 minutos. Reabilitações complexas podem levar até 120 minutos para total precisão.',
     },
     {
-      question: 'Qual é o custo de uma consulta ou procedimento dental?',
+      question: 'Quais são as principais especialidades oferecidas?',
       answer:
-        'O valor varia conforme o tipo de tratamento (ex.: limpeza, prótese), mas é acessível e pode ser discutido na primeira consulta. Oferecemos pacotes e opções de pagamento facilitado.',
+        'O foco principal do Dr. Luiz Miguel é em Reabilitação Oral e Prótese Dentária, mas oferecemos um leque completo de serviços como Restaurações Estéticas, Profilaxia (Limpeza) e Planejamento Digital do Sorriso.',
     },
     {
-      question: 'Quais serviços de odontologia o Dr. Luiz oferece?',
+      question: 'Onde está localizado o consultório?',
       answer:
-        'Oferecemos serviços como prótese dentária, restaurações, limpezas e tratamentos estéticos, todos realizados com técnicas modernas e personalizadas.',
-    },
-    {
-      question: 'Os dados dos pacientes são confidenciais?',
-      answer:
-        'Sim, todos os atendimentos seguem o código de ética odontológica, garantindo total sigilo e confidencialidade.',
+        'Nosso espaço está estrategicamente localizado em Maceió, Alagoas, com estrutura moderna e pronta para oferecer o máximo de conforto durante seu tratamento.',
     },
   ];
 
@@ -47,28 +42,35 @@ const FAQ = () => {
   };
 
   return (
-    <S.FAQ className='container' id="faq">
-      <S.FAQTitle>Dúvidas Frequentes</S.FAQTitle>
-      <S.FAQList>
-        {faqs.map((faq, index) => (
-          <S.FAQItem key={index}>
-            <S.FAQQuestion
-              onClick={() => toggleFAQ(index)}
-              className={activeIndex === index ? 'active' : ''}
-              aria-expanded={activeIndex === index}
-            >
-              {faq.question}
-              <i className="ri-arrow-down-s-line"></i>
-            </S.FAQQuestion>
-            <S.FAQAnswer
-              className={activeIndex === index ? 'active' : ''}
-            >
-              {faq.answer}
-            </S.FAQAnswer>
-          </S.FAQItem>
-        ))}
-      </S.FAQList>
-    </S.FAQ>
+    <S.FAQSection id="faq">
+      <div className="container">
+        <S.FAQHeader>
+          <S.Tag>Suporte ao Paciente</S.Tag>
+          <S.FAQTitle>Dúvidas Frequentes</S.FAQTitle>
+        </S.FAQHeader>
+
+        <S.FAQList>
+          {faqs.map((faq, index) => (
+            <S.FAQItem key={index} className={activeIndex === index ? 'active' : ''}>
+              <S.FAQQuestion
+                onClick={() => toggleFAQ(index)}
+                aria-expanded={activeIndex === index}
+              >
+                {faq.question}
+                <div className="icon-circle">
+                  <i className="ri-arrow-down-s-line"></i>
+                </div>
+              </S.FAQQuestion>
+              <S.FAQAnswer className={activeIndex === index ? 'active' : ''}>
+                <div className="answer-content">
+                  {faq.answer}
+                </div>
+              </S.FAQAnswer>
+            </S.FAQItem>
+          ))}
+        </S.FAQList>
+      </div>
+    </S.FAQSection>
   );
 };
 
