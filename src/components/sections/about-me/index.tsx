@@ -10,14 +10,16 @@ const AboutMe = () => {
             <S.ImageCard>
               <img src={aboutImage} alt="Dr. Luiz Miguel Torres" />
               <S.ExperienceBadge>
-                <span>CRO/AL</span>
+                <span>CRO / AL</span>
                 <strong>6549</strong>
               </S.ExperienceBadge>
+              {/* Elemento decorativo atrás da imagem */}
+              <div className="dots-pattern"></div>
             </S.ImageCard>
           </S.ImageSide>
 
           <S.ContentSide>
-            <S.Tag>Sobre o Profissional</S.Tag>
+            <S.Tag>Excelência em Odontologia</S.Tag>
             <S.Title>Dr. Luiz Miguel Torres</S.Title>
             <S.Subtitle>Especialista em Prótese Dentária & Reabilitação Oral</S.Subtitle>
             
@@ -26,21 +28,27 @@ const AboutMe = () => {
             </S.Description>
             
             <S.Description>
-              No meu consultório, cada detalhe é planejado para que sua experiência seja acolhedora. Minha missão é transformar o cuidado bucal em um momento de bem-estar e confiança.
+              No meu consultório, cada detalhe é planejado para que sua experiência seja acolhedora. Minha missão é transformar o cuidado bucal em um momento de bem-estar, segurança e confiança renovada.
             </S.Description>
 
             <S.FeaturesGrid>
               <div className="feature">
-                <i className="ri-shield-check-fill"></i>
+                <div className="icon-wrapper">
+                  <i className="ri-shield-check-line"></i>
+                </div>
                 <span>Atendimento Humanizado</span>
               </div>
               <div className="feature">
-                <i className="ri-microscope-line"></i>
+                <div className="icon-wrapper">
+                  <i className="ri-microscope-line"></i>
+                </div>
                 <span>Alta Tecnologia</span>
               </div>
               <div className="feature">
-                <i className="ri-heart-pulse-fill"></i>
-                <span>Foco no Conforto</span>
+                <div className="icon-wrapper">
+                  <i className="ri-medal-line"></i>
+                </div>
+                <span>Reabilitação Oral</span>
               </div>
             </S.FeaturesGrid>
           </S.ContentSide>
