@@ -1,80 +1,128 @@
-import styled from 'styled-components';
-
+import styled, { keyframes } from 'styled-components';
+import { motion } from 'framer-motion';
 import heroImage from '../../../assets/images/hero.png';
 import heroImageMobile from '../../../assets/images/heroMobile.png';
 import { breakpoints, colors } from '../../../../styles';
 
-export const Hero = styled.div`
-    width: 100%;
-    height: 80vh;
-    background-image: url(${heroImage});
-    background-size: cover;
-    background-position: center;;
+const pulse = keyframes`
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+`;
 
-    @media (max-width: ${breakpoints.laptop}) {
-        background-image: url(${heroImageMobile});
-        height: 80vh;
-    }
+export const HeroSection = styled.section`
+  width: 100%;
+  height: 90vh;
+  background-image: url(${heroImage});
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; // Garante o alinhamento à esquerda
 
-    @media (max-width: ${breakpoints.tablet}) {
-        background-image: url(${heroImageMobile});
-        height: 90vh;
-    }
+  @media (max-width: ${breakpoints.laptop}) {
+    background-image: url(${heroImageMobile});
+    height: 85vh;
+  }
+`;
+
+export const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+  z-index: 1;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    background: rgba(0,0,0,0.5); // Overlay mais uniforme no mobile
+  }
 `;
 
 export const HeroContent = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding-top: 120px;
-    gap: 10px;
-    height: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; // Conteúdo colado na esquerda do container
+  height: 100%;
+  width: 100%;
+`;
 
-    @media (max-width: ${breakpoints.laptop}) {
-        padding-top: 200px;
-        justify-content: flex-start;
-    }
+export const InfoBox = styled(motion.div)`
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; // Alinha itens internos à esquerda
+  text-align: left; // Garante texto à esquerda
+  gap: 20px;
+`;
+
+export const Tag = styled.span`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(200, 160, 79, 0.15);
+  border: 1px solid ${colors.secondary};
+  color: ${colors.secondary};
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
 `;
 
 export const HeroTitle = styled.h1`
-    font-size: 40px;
-    font-weight: bold;
-    color: ${colors.title};
-    max-width: 500px;
+  font-size: 52px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #fff;
 
-    span {
-        color: ${colors.secondary};
-    }
+  span {
+    color: ${colors.secondary};
+    display: block;
+  }
 
-    @media (max-width: ${breakpoints.tablet}) {
-        font-size: 32px;
-    }
+  @media (max-width: ${breakpoints.tablet}) {
+    font-size: 34px;
+  }
 `;
 
 export const HeroSubtitle = styled.h2`
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 480px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  @media (max-width: ${breakpoints.tablet}) {
     font-size: 16px;
-    color: ${colors.text};
-    max-width: 520px;
-    font-weight: 500;
+  }
 `;
 
 export const HeroButton = styled.a`
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 24px;
-    margin-top: 16px;
-    background: linear-gradient(45deg, ${colors.secondary} 0%, #816122ff 100%);
-    color: ${colors.title};
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s ease-out;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  background: ${colors.secondary};
+  color: ${colors.title};
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 15px rgba(200, 160, 79, 0.2);
 
-    &:hover {
-        background: darken(#C8A04F, 10%);
-        cursor: pointer;
-        transform: scale(1.05);
-    }
+  &:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+    box-shadow: 0 12px 20px rgba(200, 160, 79, 0.3);
+  }
+
+  svg {
+    animation: ${pulse} 2s infinite ease-in-out;
+  }
 `;
